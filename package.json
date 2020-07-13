@@ -1,0 +1,20 @@
+{
+  "name": "@viko16/create",
+  "version": "0.0.0",
+  "description": "Customized scaffold for my projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viko16/create.git"
+  },
+  "keywords": ["scaffold"],
+  "author": "viko16",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viko16/create/issues"
+  },
+  "homepage": "https://github.com/viko16/create#readme"
+}
