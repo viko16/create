@@ -3,18 +3,40 @@
   "version": "0.0.0",
   "description": "Customized scaffold for my projects.",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "xo --fix",
+    "test": "xo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/viko16/create.git"
+  "dependencies": {
+    "kleur": "^4.0.2",
+    "mrm-core": "^4.1.1"
   },
-  "keywords": ["scaffold"],
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "xo": "^0.32.1"
+  },
+  "repository": "viko16/create",
+  "keywords": [
+    "scaffold"
+  ],
   "author": "viko16",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/viko16/create/issues"
+  "homepage": "https://github.com/viko16/create#readme",
+  "publishConfig": {
+    "access": "public"
   },
-  "homepage": "https://github.com/viko16/create#readme"
+  "engines": {
+    "node": ">= 10"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true
+  }
 }
