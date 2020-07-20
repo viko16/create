@@ -42,5 +42,9 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "bracketSpacing": true
-  }
+  },
+  "files": [
+    "index.js",
+    "template"
+  ]
 }
