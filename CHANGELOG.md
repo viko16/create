@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/viko16/create/compare/v0.1.2...v0.2.0) (2020-07-20)
+
+
+### Features
+
+* refactor gitignore file generator ([f146db1](https://github.com/viko16/create/commit/f146db1e51bf31ca1fe7b0575805afb24493bcb4))
+
 ### [0.1.2](https://github.com/viko16/create/compare/v0.1.1...v0.1.2) (2020-07-20)
 
 
