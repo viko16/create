@@ -8,18 +8,19 @@ const kleur = require('kleur');
 const cwd = process.cwd();
 const pkgName = path.basename(cwd);
 const templateDir = path.resolve(__dirname, 'template');
-const staticTextFiles = ['.editorconfig', '.gitignore', 'LICENSE'];
+const staticTextFiles = ['LICENSE', '.editorconfig'];
 
 class Main {
   constructor() {
-    staticTextFiles.forEach((name) => this.copyIfNotExists(name));
+    staticTextFiles.forEach((name) => this.copyStaticTextFiles(name));
+    this.gitignore();
     this.packageJson();
     this.eslint();
     this.prettier();
     this.readme();
   }
 
-  copyIfNotExists(fileName) {
+  copyStaticTextFiles(fileName) {
     this.logRunning(fileName);
     const file = lines(fileName);
 
@@ -29,6 +30,29 @@ class Main {
     }
 
     copyFiles(templateDir, fileName);
+  }
+
+  gitignore() {
+    this.logRunning('.gitignore');
+    const file = lines('.gitignore', [
+      'logs/',
+      'node_modules/',
+      'coverage/',
+      '.idea/',
+      'run/',
+      'dist/',
+      '*.log',
+      '*.swp',
+      '.DS_Store',
+      '.node',
+    ]);
+
+    if (file.exists()) {
+      this.logExist('.gitignore');
+      return;
+    }
+
+    file.save();
   }
 
   packageJson() {
