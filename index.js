@@ -97,13 +97,14 @@ class Main {
       return;
     }
 
-    console.log('adding xo config into package.json');
+    console.log('Adding xo config into package.json');
     file.set('xo', {
       space: true,
       prettier: true,
     });
     file.setScript('lint', 'xo --fix');
     file.prependScript('test', 'xo');
+    file.set('devDependencies.xo', 'latest');
     file.save();
   }
 
