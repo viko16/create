@@ -4,6 +4,7 @@ const path = require('path');
 const { json, lines, copyFiles, template, packageJson } = require('mrm-core');
 const { cosmiconfigSync } = require('cosmiconfig');
 const kleur = require('kleur');
+const camelCase = require('lodash.camelcase');
 
 const cwd = process.cwd();
 const pkgName = path.basename(cwd);
@@ -134,7 +135,8 @@ class Main {
       return;
     }
 
-    file.apply({ pkgName }).save();
+    const camelCasedPkgName = camelCase(pkgName);
+    file.apply({ pkgName, camelCasedPkgName }).save();
   }
 
   logRunning(taskName) {

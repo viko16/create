@@ -18,7 +18,7 @@ yarn add ${pkgName}
 ## Usage
 
 ```js
-const ${pkgName} = require('${pkgName}');
+const ${camelCasedPkgName} = require('${pkgName}');
 ```
 
 ## Contributing
