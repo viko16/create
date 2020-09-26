@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/viko16/create/compare/v0.2.0...v1.0.0) (2020-09-26)
+
+
+### Features
+
+* make package name camelCased ([866dbea](https://github.com/viko16/create/commit/866dbea71049f5025654feb16983d0119051d42c))
+
+
+### Bug Fixes
+
+* add xo as dependency ([1077859](https://github.com/viko16/create/commit/10778593e81d97319a63db7fba61dfb2646fce11))
+
 ## [0.2.0](https://github.com/viko16/create/compare/v0.1.2...v0.2.0) (2020-07-20)
 
 

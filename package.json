@@ -1,6 +1,6 @@
 {
   "name": "@viko16/create",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Customized scaffold for my projects.",
   "main": "index.js",
   "bin": "index.js",
